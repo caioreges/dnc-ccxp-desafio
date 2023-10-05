@@ -1,0 +1,181 @@
+* {
+    margin:0;
+    padding: 0; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    
+    background-color: #FFD900;
+    width: 100%;
+}
+
+header img {
+    padding: 27px 58px;
+}
+
+section {
+    display: flex;
+}
+
+#section-1,#section-2 {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#section-1 {
+    background-color: #514988;
+    justify-content: center;
+}
+
+#section-1 h1 {
+    color: #F3C61F;
+    font-size: 40pt;
+    margin-bottom: 30px;
+}
+
+#section-1 h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+#section-1 p {
+    color: white;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+#section-2 p {
+    color: black;
+    
+}
+
+#section-1 >* {
+    margin: 30px 0;
+    padding: 0 15%;
+}
+
+#section-2 {
+    padding: 20px;
+}
+
+#countdown-data {
+    display: flex;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.countdown-object {
+    width: 25%;
+}
+
+video {
+    max-width: 90%;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.footer-half {
+    display: flex;
+    width: 50%;
+}
+
+.footer-half:last-child {
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-half:first-child {
+    flex-direction: column;
+    padding: 20px 40px;
+    align-items: center;
+}
+
+.footer-half > div > h2 {
+    margin-bottom: 20px;
+}
+
+#lotes {
+    display: flex;
+    justify-content: space-around;
+}
+
+#lotes img {
+    max-width: 20%;
+}
+
+button {
+    background-color: #514988;
+    color: white;
+    font-size: 18pt;
+    font-weight: bold;
+    height: 75px;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1280px) {
+    body {
+        width: 100%;
+    }
+    section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #section-1,#section-2 {
+        width: auto;
+    }
+
+    #section-1 >* {
+        margin: 10px 0 30px 0;
+        padding: 0 10%;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer-half {
+        width: auto;
+        
+    }
+
+    iframe {
+        max-width: 90%;
+    }
+
+    button {
+        width: 250px;
+    }
+
+    #lotes {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    #lotes img {
+        max-width: 50%;
+    }
+}
+
+
